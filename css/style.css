@@ -1,0 +1,121 @@
+@charset "utf-8";
+
+/* 공통 */
+body {
+  letter-spacing: -0.3px;
+  font-family: "Noto Sans KR", sans-serif;
+}
+.inner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* header */
+header > .inner{
+  width: 100%;
+  height: 99px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.search-box{
+  width: 400px;
+  display: flex;
+  flex-direction: row;
+  border-bottom: #275376 2px solid;
+  padding-bottom: 10px;
+  padding-right: 16px;
+}
+.search-box > img{
+  width: 30px;
+  height: 30px;
+}
+input{
+  width: 100%;
+  border: none;
+  outline: 0;
+  font-size: 16px;
+}
+input::placeholder{
+  font-size: 15px;
+}
+.char-box > p{
+  font-size: 16px;
+  margin-right: 8px;
+}
+.char-box,
+.font-size-box{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.puls > .plus-line1{
+  width: 24px;
+  height: 2px;
+  background: #111;
+  margin-left: 10px;
+  cursor: pointer;
+}
+.puls > .plus-line2{
+  width: 23px;
+  height: 2px;
+  background: #111;
+  rotate: -90deg;
+  margin-left: 10px;
+  cursor: pointer;
+}
+.min > .min-line{
+  width: 24px;
+  height: 2px;
+  background: #111;
+  margin-left: 20px;
+  cursor: pointer;
+  position: relative;
+}
+.min > .min-line::before{
+  content: '';
+  position: absolute;
+  top: -8px;
+  left: -37%;
+  width: 1px;
+  height: 20px;
+  background: #ccc;
+}
+.all-menu-btn{
+  width: 129px;
+  height: 56px;
+  line-height: 56px;
+  background: #275376;
+  text-align: center;
+  color: #fff;
+  font-size: 21px;
+  font-weight: 700;
+  border-radius: 28px;
+  position: relative;
+  padding-left: 36px;
+}
+.menu-line-box > .menu-line1{
+  position: absolute;
+  top: 35%;
+  left: 30px;
+  width: 20px;
+  height: 2px;
+  background: #fff;
+}
+.menu-line-box > .menu-line2{
+  position: absolute;
+  top: 52%;
+  left: 25px;
+  width: 20px;
+  height: 2px;
+  background: #fff;
+}
+.menu-line-box > .menu-line3{
+  position: absolute;
+  bottom: 30%;
+  left: 30px;
+  width: 20px;
+  height: 2px;
+  background: #fff;
+}
