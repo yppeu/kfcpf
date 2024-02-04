@@ -163,10 +163,14 @@ input::placeholder{
   height: 22px;
   background: #ccc;
 }
-.gnb-drop{
-  display: none;
-}
 
+
+/* 드롭메뉴 */
+.gnb > .inner{
+  width: 100%;
+  height: 100vh;
+  background: #fff;
+}
 
 /* main */
 .mbanner{
