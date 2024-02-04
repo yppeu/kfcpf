@@ -168,9 +168,32 @@ input::placeholder{
 /* 드롭메뉴 */
 .gnb > .inner{
   width: 100%;
-  height: 100vh;
-  background: #fff;
+  height: 80vh;
 }
+.gnb-drop{
+  position: absolute;
+  width: 100%;
+  height: 80vh;
+  top: 60px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: left;
+  transition: .2s linear;
+}
+.gnb-drop > li {
+  display: block;
+  padding: 10px 0;
+  font-size: 18px;
+  padding-left: 60px;
+}
+.gnb > .inner > ul > li:hover .gnb-drop{
+  background: #f3f3f3;
+  transition: .2s linear;
+}
+
+
+
+
 
 /* main */
 .mbanner{
